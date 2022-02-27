@@ -3,6 +3,6 @@ from petStore import PetStore
 print("Welcome to the pet store.")
 petStore = PetStore()
 
-petStore.readFromDatabase()
+petStore.read_from_database()
 
-petStore.printPetInfos()
+petStore.print_pet_info()

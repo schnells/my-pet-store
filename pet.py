@@ -4,6 +4,6 @@ class Pet:
         self.type = type
         self.age = age
 
-    def getInfo(self):
+    def get_info(self):
         return "Your pets' name is: " + self.name + " and it's " + str(self.age) + " years old, it is it is a " + self.type
 

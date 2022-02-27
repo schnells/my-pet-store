@@ -3,12 +3,12 @@ import mysql.connector
 
 
 class PetStore:
-    def __init__(self, petList=None) -> None:
-        if petList is None:
-            petList = []
-        self.petList = petList
+    def __init__(self, pet_list=None) -> None:
+        if pet_list is None:
+            pet_list = []
+        self.petList = pet_list
 
-    def addPet(self):
+    def add_pet(self):
         p1 = Pet()
         print("Please name your pet.py")
         p1.name = input()
@@ -19,11 +19,11 @@ class PetStore:
 
         self.petList.append(p1)
 
-    def printPetInfos(self):
+    def print_pet_info(self):
         for pet in self.petList:
             print(pet.getInfo())
 
-    def readFromDatabase(self):
+    def read_from_database(self):
         mydb = mysql.connector.connect(
             host="127.0.0.1",
             user="root",
